@@ -1,0 +1,21 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="age <= 25.5\ngini = 0.778\nsamples = 18\nvalue = [3, 3, 3, 6, 3]\nclass = SelfDevelopment", fillcolor="#d8d7fa"] ;
+1 [label="gini = 0.0\nsamples = 6\nvalue = [0, 0, 0, 6, 0]\nclass = SelfDevelopment", fillcolor="#3c39e5"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="age <= 30.5\ngini = 0.75\nsamples = 12\nvalue = [3, 3, 3, 0, 3]\nclass = Beauty", fillcolor="#ffffff"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="gender <= 0.5\ngini = 0.5\nsamples = 6\nvalue = [0, 3, 0, 0, 3]\nclass = Novel", fillcolor="#ffffff"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 3\nvalue = [0, 3, 0, 0, 0]\nclass = Novel", fillcolor="#7be539"] ;
+3 -> 4 ;
+5 [label="gini = 0.0\nsamples = 3\nvalue = [0, 0, 0, 0, 3]\nclass = finance", fillcolor="#e539c0"] ;
+3 -> 5 ;
+6 [label="gender <= 0.5\ngini = 0.5\nsamples = 6\nvalue = [3, 0, 3, 0, 0]\nclass = Beauty", fillcolor="#ffffff"] ;
+2 -> 6 ;
+7 [label="gini = 0.0\nsamples = 3\nvalue = [3, 0, 0, 0, 0]\nclass = Beauty", fillcolor="#e58139"] ;
+6 -> 7 ;
+8 [label="gini = 0.0\nsamples = 3\nvalue = [0, 0, 3, 0, 0]\nclass = Politics", fillcolor="#39e5c5"] ;
+6 -> 8 ;
+}
